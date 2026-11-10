@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; style-src 'self'; script-src 'self'"
+    />
+    <title>FL Manager</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <h1>FL Manager</h1>
+          <p class="lede">Choose the folders that hold your projects.</p>
+        </div>
+        <button id="add-folders" type="button">Add folders</button>
+      </header>
+      <section id="folder-list" aria-live="polite"></section>
+      <p id="data-path" class="meta"></p>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
